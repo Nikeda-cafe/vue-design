@@ -1,0 +1,22 @@
+<div id="app">
+    <div class="outer">
+        <div class="tab_area">
+            <ul class="tabs">
+                <li class="tab tab-1" v-bind:class="{'active_tab' : isActive[0]}" v-on:click="changeTab(0)">tab-1</li>
+                <li class="tab tab-2" v-bind:class="{'active_tab' : isActive[1]}" v-on:click="changeTab(1)">tab-2</li>
+                <li class="tab tab-3" v-bind:class="{'active_tab' : isActive[2]}" v-on:click="changeTab(2)">tab-3</li>
+            </ul>
+        </div>
+        <div class="contents_area">
+            <div v-show="isActiveTab == 0" class="contens contents-1">
+                <p>aaaaa</p>
+            </div>
+            <div v-show="isActiveTab == 1" class="contens contents-2">
+                <p>bbbbb</p>
+            </div>
+            <div v-show="isActiveTab == 2" class="contens contents-3">
+                <p>ccccc</p>
+            </div>
+        </div>
+    </div>
+</div>
